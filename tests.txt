@@ -1,0 +1,34 @@
+xplay with correct spelling
+xplay with another correct spelling
+
+xplay with wrong spelling
+xplay with another wrong spelling
+
+xplay passes on the exception from is_spelling_correct to the caller
+
+xgetResponse from spell.check.js takes 'FAVOR' returns some response
+
+xparse from spell.check.js takes "true" to return boolean True
+xparse from spell.check.js takes "false" to return boolean False
+
+xisSpellingCorrect calls get_response and parse
+xisSpellingCorrect passes on the exception from get_response to the caller
+
+xgetResponse from word.getter.js returns some response string
+
+xparse from word.getter.js response takes a string of words and returns a list of words
+xparse from word.getter.js returns takes an empty string of words and returns an empty list
+xparse from word.getter.js throws an exception if string does not have a list
+
+get_a_random_word_given_a_seed:
+xgiven a seed and a list of words, get a random word
+xgiven the same seed, get two random words and verify they are different
+
+xverify that get_a_random_word calls get_response, parse, and get_a_random_word_given_a_seed
+
+xverify that get_a_random_word calls get_random_word_given_a_seed with a seed
+xverify that get_a_random_word calls get_random_word_given_a_seed with a 
+different seed when called a second time
+
+xcheck the random word is of length 5
+xcheck the word is in all caps

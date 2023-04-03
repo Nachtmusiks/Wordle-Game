@@ -1,0 +1,78 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wordle.UI.js",
+  "scripts": {
+    "test": "jest --collect-coverage",
+    "lint": "eslint src test",
+    "plato": "plato -d report -r src",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "globals": {
+      "expect": true,
+      "Wordle": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+    },
+    "rules": {
+      "eqeqeq": "error",
+      "strict": "error",
+      "no-var": "error",
+      "no-unused-vars": [
+        "off"
+      ],
+      "prefer-const": "error",
+      "no-console": "off",
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single",
+        "avoid-escape"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.9.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
+    "node-fetch": "^2.6.9",
+    "plato": "^1.7.0",
+    "string-replace-loader": "^3.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "seedrandom": "^3.0.5"
+  }
+}

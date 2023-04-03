@@ -1,0 +1,72 @@
+body {
+  background-color: #5f9352;
+}
+
+h1 {
+  text-align: center;
+  font-family: copperplate, sans-serif;
+  font-size: 50px;
+  color:#ffffff;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  color: #ffffff;
+  border: 15px solid white;
+  margin-bottom: 50px;
+}
+
+td {
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  border: 5px solid white;
+  font: 30px/50px Arial, sans-serif;
+  font-weight: bold;
+  background-color: rgb(196, 193, 193);
+  color: #ffffff;
+}
+
+#buttonContainer {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#guessButton {
+  font-size: 30px;
+  font-family: copperplate , sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  width: 430px;
+  border-radius: 15px;
+}
+
+#guessButton:enabled {
+  background-color: #c5bb65;
+  color:#ffffff;
+  cursor: pointer;
+}
+
+#guessButton:disabled {
+  background-color: rgb(196, 193, 193);
+  color: #848383;
+  cursor: not-allowed;
+}
+
+.NO_MATCH {
+  background-color: grey;
+}
+
+.EXISTS {
+  background-color: rgb(219, 219, 47);
+}
+
+.EXACT {
+  background-color: limegreen;
+}
