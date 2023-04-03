@@ -1,5 +1,3 @@
-cd assign4
-
 npm install
 [ $? -eq 0 ]  || exit 1
 
