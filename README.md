@@ -1,5 +1,5 @@
 # Wordle Game
-This Wordle game was made by implementing Test Driven Development. The framework is Node.js and tested using Jest. 
+This Wordle game was made by implementing Test Driven Development and kept in line with SOLID principles. The framework is Node.js and tested using Jest. 
 
 ![Wordle Game](https://i.imgur.com/9p1i2Rx.png)
 
